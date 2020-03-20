@@ -4,11 +4,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+  --box-width: 3rem;
+  --box-color: yellow;
+}
+
+body {
+  display: flex;
+  background-color: teal;
+  justify-content: center;
+  align-items: baseline;
+  /* flex-direction: column; */
+}
+
 .x-menu {
   margin: 1rem;
-  background-color: green;
-  width: 4rem;
-  height: 3.5rem;
+  border: 1px tomato solid;
+  /* background-color: green; */
+  width: 10rem;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -17,10 +32,21 @@
   animation-name: x-men;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  /* background-color: lightgray;
+  width: 4rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  z-index: -1;
+  animation-name: x-men;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; */
 }
 
 .x-menu:hover {
-  background-color: red;
+  /* background-color: red; */
+  border: 1px tomato solid;
   z-index: -1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -30,9 +56,9 @@
 
 .line-one,
 .line-sec {
-  width: 3rem;
-  height: 0.4rem;
-  background-color: yellow;
+  width: 5.5rem;
+  height: 1.5rem;
+  background-color: tomato;
   animation-name: x-men;
   border-radius: 20%;
   animation-duration: 2s;
@@ -40,21 +66,79 @@
 }
 
 .x-menu:hover .line-one {
-  width: 3rem;
-  height: 0.4rem;
+  width: 6.5rem;
+  height: 2.5rem;
   border-radius: 20%;
   animation-name: x-men;
-  transform: skew(20deg, 30deg);
+  transform: skew(30deg, 40deg);
   position: absolute;
   animation-duration: 5s;
 }
 
 .x-menu:hover .line-sec {
-  width: 3rem;
-  height: 0.4rem;
+  width: 6.5rem;
+  height: 2.5rem;
   border-radius: 20%;
   animation-name: x-men;
-  transform: skew(-20deg, -30deg);
+  transform: skew(-30deg, -40deg);
   position: absolute;
   animation-duration: 5s;
 }
+
+/* @keyframes x-men {
+  0% {
+    background-color: lightgray;
+    width: 4rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -1;
+    animation-name: x-men;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  50% {
+    background-color: lightgray;
+    width: 5rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -1;
+    animation-name: x-men;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  100% {
+    background-color: rgb(253, 0, 0);
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -1;
+    animation-name: x-men;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+} */
+
+/* assignment: */
+/* Today’s assignment is  X-menu so the 
+  lines that we have done looks like = when the 
+  user hover over it your lines should move around 
+  to look like X */
+
+/* 
+  #menuToggle input:checked ~ div .x-left {
+      transform: skew(20deg, 30deg);
+      position: absolute;
+    }
+    
+    #menuToggle input:checked ~ div .x-right {
+      transform: skew(-20deg, -30deg);
+      position: absolute;
+    } */
